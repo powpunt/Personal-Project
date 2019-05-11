@@ -1,0 +1,43 @@
+body{
+
+    background-color: rgb(32, 183, 221);
+ 
+
+}
+.button {
+    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+}
+.button_start{
+    position: absolute;
+    left: 40%;
+    top: 70%;
+}
+.button_start :hover {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+}
+picture{
+    position: absolute;
+    left: 40%;
+    top: 0%;
+
+}
+@media screen and (max-width:600px) {
+    .button_start picture{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:600px) {
+    button .logo {
+      width: auto;
+    }
+  }
