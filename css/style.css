@@ -1,10 +1,14 @@
 
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
+<<<<<<< HEAD
+=======
+    cursor: url(/img/cursor_default.png) 0 0, default;
+>>>>>>> dbe1c8525ed475098cfabadcb4749870e0bdcd24
 }
-
 .clearfix {
     clear: both;
 }
@@ -30,6 +34,7 @@ body {
     margin: 0;
     font-size: 24px;
     font-weight: normal;
+    font-family: '';
     padding: 10px;
 }
 .menubar ul.menu {
@@ -42,6 +47,7 @@ body {
 }
 .menubar ul.menu li a {
     text-decoration: none;
+    font-family: 'Kanit', sans-serif;
     color: rgb(241, 6, 241);
     border-bottom: 2px solid transparent;
     padding-bottom: 20px;
