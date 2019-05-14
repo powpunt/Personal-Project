@@ -4,6 +4,10 @@ body{
  
 
 }
+*{
+  padding: 0;
+  margin: 0;
+}
 .button {
     
     border: none;
@@ -17,27 +21,61 @@ body{
 }
 .button_start{
     position: absolute;
-    left: 40%;
-    top: 70%;
+    left: 39%;
+    top: 60%;
 }
 .button_start :hover {
   position: absolute;
-  left: 80%;
-  top: 50%;
+  left: 60%;
+  
 }
-picture{
-    position: absolute;
-    left: 40%;
-    top: 0%;
+
+.logo{
+  position: absolute;
+  left:2%;
+  top: 0%;
 
 }
-@media screen and (max-width:600px) {
+#hello{
+  height: 600px ;
+  width: 250px;
+  position: absolute;
+  left: 40%;
+  top: -5%;
+}
+#ject{
+  height: 100px ;
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
     .button_start picture{
       width: 100%;
     }
+    button .logo{
+    width: auto;
   }
-  @media screen and (max-width:600px) {
-    button .logo {
-      width: auto;
-    }
+  #hello{
+    height: 520px ;
+    width: 180px;
+    position: absolute;
+    left: 35%;
+    top: -5%;
+  
   }
+  #ject{
+    height: 50px ;
+    width: 120px;
+  }
+  .button_start{
+    position: absolute;
+    left: 22%;
+    top: 50%;
+}
+.button_start :hover {
+  position: absolute;
+  left: 60%;
+  
+}
+}  
+  
