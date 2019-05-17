@@ -2,9 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
-}
-.clearfix {
-    clear: both;
+    background-color: black;
 }
 
 .container {
@@ -15,8 +13,8 @@ body {
 .menubar {
     width: 100%;
     height: 50px;
-    background: #fff;
-    box-shadow: 0 0 10px #666; 
+    background: rgb(82, 82, 82);
+    box-shadow: 0 0 1px #666; 
     
 }
 
@@ -28,7 +26,6 @@ body {
     margin: 0;
     font-size: 24px;
     font-weight: normal;
-    font-family: '';
     padding: 10px;
 }
 .menubar ul.menu {
@@ -38,145 +35,46 @@ body {
 .menubar ul.menu li {
     float: left;
     margin-right: 20px;
+    
 }
 .menubar ul.menu li a {
     text-decoration: none;
-    font-family: 'Kanit', sans-serif;
-    color: rgb(241, 6, 241);
+    color: rgb(0, 0, 0);
     border-bottom: 2px solid transparent;
     padding-bottom: 20px;
 }
 .menubar ul.menu li a:hover {
     border-bottom: 2px solid #333;
     padding-bottom: 0;
+    
 }
-
-.header {
-    background:url(../img/bg.png) no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 450px;
-}
-
-.header_area {
-    padding-top: 150px;
-    text-align: center;
-    color: #fff;
-    margin: 0 auto;
-    width: 660px;
-}
-.header_area h1 {
-    margin: 0;
-    font-size: 60px;
-    font-weight: normal;
-}
-.header_area p {
-    margin: 0 auto;
-    margin-top: 15px;
-    width: 480px;
-    font-size: 16px;
-}
-
-
-.หมีที่กิน {
-    width: 100%;
-    height: 400px;
-}
-.หมีที่กิน_area {
-    color: #333;
-}
-.หมีที่กิน_area img {
-    margin-top: 80px;
-    float: left;
-}
-.หมีที่กิน_text {
-    text-align: center;
-    width: 460px;
-    float: left;
-    margin-left: 70px;
-    margin-top: 140px;
-}
-.หมีที่กิน_area h1 {
-    margin: 0;
-    font-weight: normal;
-}
-
-.หมีมีรูป {
-    width: 100%;
-    height: 350px;
-    background: #333;
-}
-.หมีมีรูป {
-    color: #333;
-}
-.หมีมีรูป_area img {
-    margin-top: 48px;
-    float: left;
-    margin-left: 40px;
-}
-.หมีมีรูป_text {
-    text-align: center;
-    width: 460px;
-    float: left;
-    margin-left: 70px;
-    margin-top: 140px;
-    color: #fff;
-}
-.หมีมีรูป_area h1 {
-    margin: 0;
-    font-weight: normal;
-}
-
 .contact {
     width: 100%;
     height: 515px;
-}
-
-.contact_area h1 {
-    font-weight: normal;
-}
-.contact_area input {
-    margin: 10px 0;
-    border: 2px solid #333;
-    width: 350px;
-    padding: 10px;
-}
-
-.contact_area textarea {
-    margin: 10px 0;
-    border: 2px solid #333;
-    width: 350px;
-    padding: 10px;
-}
-
-.contact_area button {
-    padding: 10px;
-    width: 90px;
-    background: #333;
-    color: #fff;
-    border: 2px solid transparent;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.contact_area button:hover {
-    background: #fff;
-    color: #333;
-    border: 2px solid #333;
+    color: azure;
+    text-align: center;
 }
 
 footer {
-    background: #333;
+    background: rgb(82, 82, 82);
     margin-top: 60px;
     padding: 20px;
     text-align: center;
     color: #fff;
-    
+    box-shadow: 0 0 1px #666; 
+   
    
 }
 footer p {
     margin: 0;
 }
-
-
+.contactUS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Pc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
