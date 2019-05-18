@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Kanit', sans-serif;
     background-color: black;
+   
 }
 
 .container {
@@ -10,43 +11,10 @@ body {
     margin: 0 auto;
 }
 
-.menubar {
-    width: 100%;
-    height: 50px;
-    background: rgb(82, 82, 82);
-    box-shadow: 0 0 1px #666; 
-    
-}
 
 .menubar .logo {
     float: left;
-}
 
-.menubar h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: normal;
-    padding: 10px;
-}
-.menubar ul.menu {
-    list-style: none;
-    float: right;
-}
-.menubar ul.menu li {
-    float: left;
-    margin-right: 20px;
-    
-}
-.menubar ul.menu li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    border-bottom: 2px solid transparent;
-    padding-bottom: 20px;
-}
-.menubar ul.menu li a:hover {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0;
-    
 }
 .contact {
     width: 100%;
@@ -54,18 +22,7 @@ body {
     color: azure;
     text-align: center;
 }
-
-footer {
-    background: rgb(82, 82, 82);
-    margin-top: 60px;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    box-shadow: 0 0 1px #666; 
-   
-   
-}
-footer p {
+ p {
     margin: 0;
 }
 .contactUS {
@@ -77,4 +34,76 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(88, 88, 88); 
+    color: rgb(0, 0, 0); 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(255, 255, 255); 
+  }
+  /*/*/
+
+  
+.menu {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+.menu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu.responsive {position: relative;}
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
