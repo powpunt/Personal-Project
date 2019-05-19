@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/Gallary.css">
     <script src="Script/btn.js"></script>
     <script src="Script/expand.js"></script>
+    <script src="Script/modal.js"></script>
 
 </head>
 <body>
@@ -16,9 +17,9 @@
     <header>
             <div class="menu" id="mymenu">
             <a href="start.html" class="active"><img src="img/Ject.png"  style=" height: 40px ; width: 120px;"></a>        
-            <a href="index.html">Index</a>
             <a href="gallary.html">Gallary</a>
             <a href="About.html">About</a>
+            <a href="index.html">MiniGame</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
             </a>
@@ -31,27 +32,49 @@
                   </div>
                   <div class="row">
                     <div class="leftcolumn">
+          
                       <div class="card">
-                        <h2>What is street art ?</h2>
-                        <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text..</p>
-                        <p>text.</p>
-                      </div>
-                      <div class="card">
-                        <h2>TITLE HEADING</h2>
-                        <div class="fakeimg" style="height:200px;">Image</div>
+                            
+                      <button class="tablink" onclick="openPage('Wacom', this, 'black')">Home</button>
+                      <button class="tablink" onclick="openPage('News', this, 'black')" id="defaultOpen">News</button>
+                      <button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
+                      <button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+
+                        <div id="Wacom" class="tabcontent">
+                          <h3>Home</h3>
+                          <p>Home is where the heart is..</p>
+                        </div>
+
+                        <div id="News" class="tabcontent">
+                          <h3>News</h3>
+                          <p>Some news this fine day!</p> 
+                        </div>
+
+                        <div id="Contact" class="tabcontent">
+                          <h3>Contact</h3>
+                          <p>Get in touch, or swing by for a cup of coffee.</p>
+                        </div>
+
+                        <div id="About" class="tabcontent">
+                          <h3>About</h3>
+                          <p>Who we are and what we do.</p>
+                        </div>
+
+                        <h2>Rewiew Wacom Intuos (CTL-480) </h2>
+                        <p>สวัสดีครับผมวันนี้ผมจะมารีวิว Wacom Intuos (CTL-480)</p>
+                        <img src="wacom/wacom1.jpg" alt="Wacom"id="Wacom">
                         <p>Some text..</p>
                         <p>text.</p>
                       </div>
                     </div>
                     <div class="rightcolumn">
                       <div class="card">
-                        <h1>Street art By.Moaohxz</h1>
-                        <div class="fakeimg" style="height:100px;">Image</div>
-                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                        <h1>What is Moaohxz?</h1>
+                        <div><img src="Picture/Mooh.png"alt="mooh"id="mooh"></div><br>
+                        <p>M o a o h x z is <br>M o o h  < h a m </p>
                       </div>
                       <div class="card">
-                        <h1>Street art By.Moaohxz</h1>
+                        <h1>My Collection</h1>
                         <a target="_blank" href="Picture/dart.png">
                         <div class="img"><img src="Picture/dart.png"  alt="dart"id="dart"></div><br>
                     </a>
@@ -60,16 +83,36 @@
                     </a>
                         <div class="fakeimg">Image</div>
                       </div>
-                      <div class="card">
+                      <div class="card">          
                         <h3>Follow Me</h3>
-                        <p>Some text..</p>
+                        <img src="Picture/15826125_389171624769107_191717532562099133_n.jpg" alt="Moohx" style="width:100%">
+                            <h1>Sirichai.P</h1>
+                            <p class="title">Student,KMITL</p>
+                            <p> king mongkut's institute of technology ladkrabang</p>
+                        <div class="social">
+                        <div ><div class="social-icons">
+                          <a href="https://github.com/powpunt/Personal-Project" class="social-icon social-icon--github">
+                            <i class="fa fa-github"></i>
+                            <div class="tooltip">Github</div>
+                          </a>
+                          <a href="https://www.instagram.com/_moaohx/"  class="social-icon social-icon--instagram">
+                            <i class="fa fa-instagram"></i>
+                            <div class="tooltip">Instagram</div>
+                          </a>
+                          <a href="https://www.facebook.com/profile.php?id=100010288176580&ref=bookmarks&__nodl&_rdr" class="social-icon social-icon--facebook">
+                            <i class="fa fa-facebook"></i>
+                            <div class="tooltip">Facebook</div>
+                          </a>
+                        </div>
+                      </div>
                       </div>
                     </div>
                   </div>
+                 </div>
                   
-                  <div class="footer">
+                <div class="footer">
                     <h2>Footer</h2>
-                  </div>
+                </div>
                   
 </body>
 </html>
