@@ -26,11 +26,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.Pc {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
 }
 #myBtn {
     display: none; 
