@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
-    background-color: black;
+    background-color: #050708
+    
    
 }
 #myBtn {
@@ -29,10 +30,12 @@ body {
   }
   
   .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: rgb(73, 73, 73);
+    background-image: url("/Personal-Project/Picture/MoohReview.png");
+    background-repeat: no-repeat;
+    height: 300px; 
+    width: 1500px auto;
+    background-position: center;
+    background-size: cover;
   }
   
   /* Create two unequal columns that floats next to each other */
@@ -99,6 +102,9 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 21px;
+  }
+  b{
+    color: #5ce4dd;
   }
   
   .menu a:hover {
@@ -175,141 +181,6 @@ body {
       padding: 0;
     }
   }
-/* Color Variables */
-/* Social Icon Mixin */
-/* Social Icons */
-.social-icons {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.social-icon {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 80px ;
-  height: 80px ;
-  margin: 0 0.5rem;
-  border-radius: 50%;
-  cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 2.5rem;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-  transition: all 0.15s ease;
-}
-.social-icon:hover {
-  color: #fff;
-}
-.social-icon:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-50%, -150%);
-          transform: translate(-50%, -150%);
-}
-.social-icon:active {
-  box-shadow: 0px 1px 3px rgba(231, 225, 225, 0.5) inset;
-}
-.social-icon--twitter {
-  background: #2b97f1;
-  background: linear-gradient(tint(#2b97f1, 5%), shade(#2b97f1, 5%));
-  border-bottom: 1px solid shade(#2b97f1, 20%);
-  color: tint(#2b97f1, 50%);
-}
-.social-icon--facebook {
-  background: #3b5a9b;
-  background: linear-gradient(tint(#3b5a9b, 5%), shade(#3b5a9b, 5%));
-  border-bottom: 1px solid shade(#3b5a9b, 20%);
-  color: tint(#3b5a9b, 50%);
-}
-.social-icon--facebook:hover {
-  color: tint(#3b5a9b, 80%);
-  text-shadow: 0px 1px 0px shade(#3b5a9b, 20%);
-}
-.social-icon--facebook .tooltip {
-  background: #3b5a9b;
-  background: linear-gradient(tint(#3b5a9b, 15%), #3b5a9b);
-  color: tint(#3b5a9b, 80%);
-}
-.social-icon--facebook .tooltip:after {
-  border-top-color: #3b5a9b;
-}
-.social-icon--instagram {
-  background: #527fa6;
-  background: linear-gradient(tint(#527fa6, 5%), shade(#527fa6, 5%));
-  border-bottom: 1px solid shade(#527fa6, 20%);
-  color: tint(#527fa6, 50%);
-}
-.social-icon--instagram:hover {
-  color: tint(#050708, 80%);
-  text-shadow: 0px 1px 0px shade(#527fa6, 20%);
-}
-.social-icon--instagram .tooltip {
-  background: #527fa6;
-  background: linear-gradient(tint(#527fa6, 15%), #527fa6);
-  color: tint(#527fa6, 80%);
-}
-.social-icon--instagram .tooltip:after {
-  border-top-color: #527fa6;
-}
-
-.social-icon--github {
-  background: #4284c0;
-  background: linear-gradient(tint(#4284c0, 5%), shade(#4284c0, 5%));
-  border-bottom: 1px solid shade(#4284c0, 20%);
-  color: tint(#4284c0, 50%);
-}
-.social-icon--github:hover {
-  color: tint(#4284c0, 80%);
-  text-shadow: 0px 1px 0px shade(#4284c0, 20%);
-}
-.social-icon--github .tooltip {
-  background: #4284c0;
-  background: linear-gradient(tint(#4284c0, 15%), #4284c0);
-  color: tint(#4284c0, 80%);
-}
-.social-icon--github .tooltip:after {
-  border-top-color: #4284c0;
-}
-.social-icon i {
-  position: relative;
-  top: 1px;
-}
-
-/* Tooltips */
-.tooltip {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  padding: 0.8rem 1rem;
-  border-radius: 3px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  opacity: 0;
-  pointer-events: none;
-  text-transform: uppercase;
-  -webkit-transform: translate(-50%, -100%);
-          transform: translate(-50%, -100%);
-  transition: all 0.3s ease;
-  z-index: 1;
-}
-.tooltip:after {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  content: "";
-  border: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: transparent;
-  -webkit-transform: translate(-50%, 100%);
-          transform: translate(-50%, 100%);
-}
 .tablink {
   background-color: #555;
   color: white;
@@ -335,7 +206,16 @@ body {
 }
 
 #Wacom {background-color: rgb(0, 0, 0);}
-#News {background-color: rgb(0, 0, 0);}
-#Contact {background-color: rgb(0, 0, 0);}
+#Razer {background-color: rgb(0, 0, 0);}
+#Keyboard {background-color: rgb(0, 0, 0);}
 #About {background-color: rgb(0, 0, 0);}
 
+#Pickb1{
+  height: 400px ;
+  width: 600px;
+  position: relative;
+}
+#moohr{
+  height: 400px ;
+  width: 1108px;
+}

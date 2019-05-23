@@ -2,19 +2,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
-    background-color: black;
+    background-image: url("/Personal-Project/Picture/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
    
 }
 
 .container {
     width: 960px;
     margin: 0 auto;
-}
-
-
-.menubar .logo {
-    float: left;
-
 }
 .contact {
     width: 100%;
@@ -69,7 +66,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 21px;
 }
 
 .menu a:hover {
