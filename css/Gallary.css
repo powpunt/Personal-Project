@@ -235,3 +235,8 @@ body {
   border: 1px solid rgb(105, 111, 116); 
   border-radius: 4px; 
 }
+h3{
+  font: bold;
+  font-size: 24px;
+}
+

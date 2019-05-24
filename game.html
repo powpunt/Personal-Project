@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>หมีเรื่องเล่า</title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content=img/icon/paw.png itemprop="image">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="Script/expand.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="menu" id="mymenu">
+            <a href="start.html" class="active"><img src="img/Ject.png"  style=" height: 40px ; width: 120px;"></a>
+
+            <a href="index.html">หมีเรื่องแล้ว</a>
+            <a href="About.html">หมีอะไรอ่ะ</a>
+            <a href="game.html">หมีมินิเกม</a>
+            <a href="Photo.html">หมีแค่รูป</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+             </a>
+        </div>
+      
+      <div style="padding-left:16px">
+        
+    </header>
+
+    <title>Floppy Bird</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Nebez Briefkani" />
+    <meta name="description" content="play floppy bird. a remake of popular game flappy bird using just html/css/js" />
+    <meta name="keywords" content="flappybird,flappy,bird,floppybird,floppy,html,html5,css,css3,js,javascript,jquery,github,nebez,briefkani,nebezb,open,source,opensource" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Floppy Bird" />
+    <meta property="og:description" content="play floppy bird. a remake of popular game flappy bird using just html/css/js" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://nebez.github.io/floppybird/assets/thumb.png" />
+    <meta property="og:url" content="http://nebez.github.io/floppybird/" />
+    <meta property="og:site_name" content="Floppy Bird" />
+    
+
+ </head>
+ <body>
+    <div id="gamecontainer">
+       <div id="gamescreen">
+          <div id="sky" class="animated">
+             <div id="flyarea">
+                <div id="ceiling" class="animated"></div>
+                <!-- This is the flying and pipe area container -->
+                <div id="player" class="bird animated"></div>
+                
+                <div id="bigscore"></div>
+                
+                <div id="splash"></div>
+                
+                <div id="scoreboard">
+                   <div id="medal"></div>
+                   <div id="currentscore"></div>
+                   <div id="highscore"></div>
+                   <div id="replay"><img src="assets/replay.png" alt="replay"></div>
+                </div>
+                
+                <!-- Pipes go here! -->
+             </div>
+          </div>
+          <div id="land" class="animated"><div id="debug"></div></div>
+       </div>
+    </div>
+    <div id="footer">
+       <a href="http://www.dotgears.com/">original game/concept/art by dong nguyen</a>
+       <a href="http://nebezb.com/">recreated by nebez briefkani</a>
+    </div>
+    <div class="boundingbox" id="playerbox"></div>
+    <div class="boundingbox" id="pipebox"></div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/buzz.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    
+</body>
+</html>

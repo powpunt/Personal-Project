@@ -4,90 +4,264 @@
     <meta charset="UTF-8">
     <title>หมีเรื่องเล่า</title>
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta content=img/icon/paw.png itemprop="image">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Gallary.css">
+    <script src="Script/btn.js"></script>
     <script src="Script/expand.js"></script>
+    <script src="Script/modal.js"></script>
 
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header>
-        <div class="menu" id="mymenu">
-            <a href="start.html" class="active"><img src="img/Ject.png"  style=" height: 40px ; width: 120px;"></a>
-            
-            
-            <a href="gallary.html">Gallary</a>
-            <a href="About.html">About</a>
-            <a href="index.html">MiniGame</a>
+            <div class="menu" id="mymenu">
+            <a href="start.html" class="active"><img src="img/Ject.png"  style=" height: 40px ; width: 120px;"></a>        
+            <a href="index.html">หมีเรื่องแล้ว</a>
+            <a href="About.html">หมีอะไรอ่ะ</a>
+            <a href="game.html">หมีมินิเกม</a>
+            <a href="Photo.html">หมีแค่รูป</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-             </a>
+            </a>
         </div>
-      
-      <div style="padding-left:16px">
-        
+        <div style="padding-left:16px">
     </header>
+    <section>
+            <div class="header">
+                <img >
+                  </div>
+                  <div class="row">
+                    <div class="leftcolumn">
+          
+                      <div class="card">
+                            
+                        <button class="tablink" onclick="openPage('Keyboard', this, 'black')" style="background-color: black;"> What is Mechanical Keyboard<br></br></button>
+                      <button class="tablink" onclick="openPage('Razer', this, 'black')">My Mechanical Keyboard<br></br></button>
+                      <button class="tablink" onclick="openPage('Wacom', this, 'black')" id="defaultOpen">Wacom Intuos (CTH-480)<br></br></button>
+                      
+                      <button class="tablink" onclick="openPage('About', this, 'black')">My Computer & Gear<br></br></button>
 
-    <title>Floppy Bird</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Nebez Briefkani" />
-    <meta name="description" content="play floppy bird. a remake of popular game flappy bird using just html/css/js" />
-    <meta name="keywords" content="flappybird,flappy,bird,floppybird,floppy,html,html5,css,css3,js,javascript,jquery,github,nebez,briefkani,nebezb,open,source,opensource" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+                      <div id="Keyboard" class="tabcontent" style="display: block;">
+                          <h3>คีย์บอร์ด Mechanical คืออะไร??</h3>
+                          <img src="/Personal-Project/Picture/kb1.jpg"  alt="Pickb1"id="Pickb1">
+                          <p>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;คีย์บอร์ด Mechanical (Mechanical Keyboard) คือคีย์บอร์ดอีกประเภทหนึ่ง ซึ่งแตกต่างจากคีย์บอร์ดราคาถูกที่เราใช้กันทั่วไป ส่วนใหญ่จะเป็นคีย์บอร์ด Gaming โดยคีย์บอร์ดทั่วไปที่มีราคาเพียงหลักร้อยบาทนั้นจะเป็นคียบอร์ดแบบ Rubber Dome คือใต้ปุ่มจะเป็นยาง มีต้นทุนในการผลิตที่ต่ำกว่า และมีความทนทานน้อยกว่าคีย์บอร์ดแบบ Mechanical
+                          <img src="/Personal-Project/Picture/machanicalkb.jpg"  alt="Pickb1"id="Pickb1">
+                           <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                           <b>คีย์บอร์ด Mechanical</b> จะมีราคาอยู่ในช่วงหลักพัน ตั้งแต่ 1-2 พันบาทขึ้นไป โครงสร้างใต้ปุ่มจะเป็นกลไกสวิตช์แบบสปริง มีความทนทานสูง อายุการใช้งานสูงถึงราว ๆ 50 ล้านครั้ง รวมทั้งมีความแม่นยำในการตอบสนองสูง จึงเป็นที่นิยมในกลุ่มเกมเมอร์ และให้ความรู้สึกในการกดและพิมพ์ที่ดีกว่า นอกจากนี้ตัวปุ่ม (Key Cap) ยังสามารถถอดออกง่ายกว่าคีย์บอร์ดปุ่มยาง ทำให้สามารถถอดเปลี่ยนหรือทำความสะอาดได้อย่างง่ายดาย โดยสวิตช์ของคีย์บอร์ด Mechanical นั้นจะมีแบ่งออกเป็นหลายสีซึ่งมีกลไกการทำงานที่แตกต่างกัน แยกออกเป็น 2 ประเภทหลัก ๆ คือ Linear Switch และ Tactile Switch<br>
+                            &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  <b>Linear Switch - </b> มีรูปแบายกับบการกดคล้คีย์บอร์ดปุ่มยางคือกดแบบจังหวะเดียว มีแรงต้านในการกดคงที่ เสียงในการกดค่อนข้างเงียบมาก เช่น Red Switch และ Black Switch        
+                           <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  <b> Tactile Switch -</b> มีจังหวะในการกดแบบ 2 จังหวะ ด้วยแรงต้านที่ต่างกัน โดยในจังหวะแรกจะมีแรงต้านน้อย ปุ่มจะยังไม่มีการตอบสนอง และปุ่มจะเริ่มทำงานในการกดจังหวะที่ 2 ซึ่งมีแรงต้านที่มากกว่า มีเสียงในการกดดังกว่า Linear Switch เช่น Blue Switch และ Brown Switch</p>
+                         
+                           <img src="/Personal-Project/Picture/Switch/Key_3.gif"  alt="Switch"id="Switch">
+                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Red
+                              Switch</b> - เป็น Linear Switch มีแรงต้านน้อยมาก ใช้แรงกดเพียง 45 cN 
+                             เหมาะแก่การพิมพ์สัมผัสหรือเล่นเกมที่ต้องกดปุ่มรัว ๆ ไม่ต้องออกแรงมาก 
+                             เสียงขณะเงียบมาก แต่ก็อาจเกิดการกดโดยไม่ได้ตั้งใจได้สำหรับคนนิ้วหนัก<br><br> 
 
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Floppy Bird" />
-    <meta property="og:description" content="play floppy bird. a remake of popular game flappy bird using just html/css/js" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://nebez.github.io/floppybird/assets/thumb.png" />
-    <meta property="og:url" content="http://nebez.github.io/floppybird/" />
-    <meta property="og:site_name" content="Floppy Bird" />
-    
+                             <img src="/Personal-Project/Picture/Switch/Key_4.gif"  alt="Switch"id="Switch">
+                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Black
+                              Switch</b> - เเป็น Linear Switch และเสียงเงียบเหมือนกับ Red Switch 
+                              แต่มีแรงต้านมากกว่า ใช้แรงกด 60 cN เหมาะสำหรับคนนิ้วหนัก 
+                              ใช้ในการเล่นเกมได้ดี เพราะลดโอกาสการกดปุ่มโดยไม่ได้ตั้งใจ 
+                              แต่ถ้าใช้ในการพิมพ์งานนาน ๆ อาจรู้สึกเมื่อยนิ้วได้  <br><br> 
 
- </head>
- <body>
-    <div id="gamecontainer">
-       <div id="gamescreen">
-          <div id="sky" class="animated">
-             <div id="flyarea">
-                <div id="ceiling" class="animated"></div>
-                <!-- This is the flying and pipe area container -->
-                <div id="player" class="bird animated"></div>
-                
-                <div id="bigscore"></div>
-                
-                <div id="splash"></div>
-                
-                <div id="scoreboard">
-                   <div id="medal"></div>
-                   <div id="currentscore"></div>
-                   <div id="highscore"></div>
-                   <div id="replay"><img src="assets/replay.png" alt="replay"></div>
+                             <img src="/Personal-Project/Picture/Switch/Key_5.gif"  alt="Switch"id="Switch">
+                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Blue
+                              Switch</b> - - เป็น Tactile Switch ใช้การกดแบบ 22 จังหวะ ใช้แรงกด 60 cN 
+                              หลายคนนิยมใช้ในการเล่นเกม เพราะให้ความรู้สึกในการกดที่ดีกว่า แม่นยำ 
+                              ไม่เผลอกดโดยไม่ได้ตั้งใจ และเมื่อกดปุ่มจะมีเสียงดัง "คลิก" 
+                              ซึ่งเป็นที่ชื่นชอบของหลาย ๆ คน เพราะทำให้รู้สึกพิมพ์สนุกคล้ายกับเครื่องพิมพ์ดีด 
+                              แต่เสียงที่ดังอาจสร้างความรำคาญให้กับคนรอบข้างได้ <br><br> 
+
+                             <img src="/Personal-Project/Picture/Switch/Key_6.gif"  alt="Switch"id="Switch">
+                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Brown
+                              Switch</b> - เป็น Tactile Switch แต่ไม่มีเสียงดัง "คลิก" เหมือนอย่าง Blue 
+                              Switch และใช้แรงกด 55 cN ซึ่งน้อยกว่า Blue Switch อยู่เล็กน้อย 
+                              เหมาะสำหรับคนชอบปุ่มกดแบบ 2 จังหวะ แต่ไม่ชอบเสียงดังแบบ Blue Switch
+                              <br><br> 
+                              <b>ภาพจาก cherrymx, pcgamingrace, roccat </b>
+                        </div>
+
+                        <div id="Razer" class="tabcontent">
+                          <h3>Razer Blackwidow Chroma</h3>                         
+                          <img src="/Personal-Project/Review/Picture/IMG_6695.jpg"  alt="Pickb1"id="Pickb1">
+                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Razer Blackwidow
+                              Chroma</b> - Razer Blackwidow Chroma ที่เป็นการนำตัวคีย์บอร์ดรุ่นท็อปล่าสุด Razer BlackWidow Ultimate 2014 
+                              มาดัดแปลงให้โฉบเฉี่ยวไฉไลมากยิ่งขึ้น ด้วยการเพิ่มลูกเล่นแสงไฟแบ็คไลท์ LED ที่สามารถแสดงได้หมดครบทุกเฉดสีที่มีอยู่บนโลกใบนี้
+                              ในขณะที่ตัวเนื้อวัสดุและดีไซน์รูปลักษณ์ภายนอกยังคงเดิม โดยตัวบอดี้ทำจากพลาสติกดำด้านที่มีความแข็งแรงทนทานไม่เป็นรอย 
+                              พร้อมด้วยสายถักคุณภาพเยี่ยมอย่างหนาไม่ต้องกลัวเวลาบิดงอ      <br><br> 
+
+                              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Green Switch</b> - 
+                              เป็นสวิตช์อีกสีที่ยังมีผลิตจำหน่ายแต่ยังมีคีย์บอร์ดไม่กี่รุ่นเท่านั้นที่นำไปติดตั้งเพราะราคาของสวิตช์ต่อตัวจะสูงกว่าสวิตช์สีน้ำเงินหรือดำ 
+                              โดยสวิตช์จะเป็นแบบ Tactile และมีเสียง Clickly เช่นเดียวกับสีน้ำเงิน แต่ว่าปุ่มกดจะค่อนข้างแข็งที่ 80 cN ด้วยกัน 
+                              โดยปุ่มที่แข็งนี้เหมาะสำหรับเกมเมอร์ที่กดปุ่มค่อนข้างแรงและต้องการปุ่มที่ตอบสนองการเล่นเกมได้มากกว่าสีดำโดยจะมีแบรนด์ 
+                              Razer ที่ผลิต Mechanical Keyboard พร้อมสวิตช์สีนี้มาวางจำหน่าย   <br><br> 
+
+                              <br> <b>ข้อเสีย</b> 
+                              <br>- การกดปุ่มสำหรับคนมือใหม่อาจจะงงกับปุ่ม marco ที่เพิ่มขึ้นมาอาจจะไม่ชินก็เป็นได้   
+                              <br>- คีย์ที่เป็น EN สำหรับบางคนอาจจะไม่ถนัดการพิมพ์คีย์บอร์ดที่ไม่มีภาษาไทย ก็ได้แต่สำหรับผมที่พิมพ์คีย์ EN มาตลอดก็ไม่เป็นปัญหาอะไร
+                              <br>- ราคาค่อนข้างสูงซึงเป็นธรรมดาของแบรนนี้ตัวคีย์บอร์ดตัวที่เป็น Chroma ส่วนมากจะราคา 3000++ ซึ่งตัวนี้เช่นกันซึ่งราคาอยู่ที่ 4,990 บาท
+                                  <br><br> 
+
+
+                                 
+                                  <h2><a href="Photo.html">More Photo : Razer Blackwidow Chroma</a></h2>
+                                  
+
+
+                                   <h3>  Razer Blackwidow Ultimate IP54(TH)</h3>                         
+                          <img src="/Personal-Project/Review/Picture/IMG_6688.jpg"  alt="Pickb1"id="Pickb1">
+                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> Razer Blackwidow Ultimate IP54(TH)</b> - 
+                             เป็นคียบอร์ดแบบ Mechanical Keyboard ขนาด Full Size มาพร้อมปุ่มตัวเลข NumPad มาพร้อมการตั้งค่า 
+                             Macro Key ซึ่งตั้งได้ตามต้องการจากใน Software และมาพร้อม Gaming Mode ที่เมื่อเปิดใช้งานจะเป็นการปิดการทำงานของปุ่มอื่นๆ 
+                             ที่ไม่ได้ใช้ในขณะที่เล่นเกม เพราะอาจจะมารบกวนการเล่นเกมหากไปโดนโดยไม่ตั้งใจได้ 
+                             ในส่วนของพื้นผิวของตัวคีย์บอร์ดเป็นแบบพลาสติกผิวด้านแบบไม่เรียบหยิบจับได้อย่างถนัดมือ ไม่ลื่น และยังดูเท่อยู่ภายในตัว 
+                             มาพร้อมเทคโนโลยีเฉพาะของ Razer ที่ชื่อว่า “Razer Instant Trigger Technology (ITT)” 
+                             หรือก็คือการส่งข้อมูลจากตัวคีย์บอร์ดไปถึงคอมพิวเตอร์แบบทันทีโดยไร้ซึ่งการดีเลย์ทำให้สามารถใช้งานได้อย่างรวดเร็วทันใจ
+                              ไม่มีติดขัดในทุกสถานกาณ์ไม่ว่าจะเล่นเกมหรือพิมงานก็ตาม และไม่ว่าจะเอาน้ำหรือขนมมากินขณะเล่นเกม หรือวางไว้ใกล้ๆ
+                               กับตัวคียบ์บอร์ดก็ไม่มีปัญหา ไรกังวลด้วยความสามารถในการกันน้ำและกันฝุ่นได้มาตรฐาน IP54
+                               แม้จะทำน้ำหรือขนมหกใส่ก็บอกได้เลยว่าทำอะไร Blackwidow Ultimate IP54 ไม่ได้แม้แต่น้อย ไร้กังวลกันไปเลย     <br><br> 
+
+                              <br> <b>จุดเด่น-ด้อย</b> 
+                              <br>- สีสัน อาจจะไม่สวยเท่าตัว Chroma  
+                              <br>- ฟังชั่นลูกเล่นต่างๆอาจจะสู้ตัวท๊อปไม่ค่อยได้
+                              <br>- ราคาค่อนข้างสูงซึงเป็นธรรมดาของแบรนนี้ตัวคีย์บอร์ดตัวที่เป็น Chroma ส่วนมากจะราคา 3000++ ซึ่งตัวนี้เช่นกันซึ่งราคาอยู่ที่ 4,990 บาท
+                                  <br><br> 
+
+                                  <br><b> Switch :</b>&nbsp; <b>Green Switch</b>
+                                  <img src="/Personal-Project/Review/Picture/IMG_6687.jpg"  alt="Pickb1"id="Pickb1">
+
+                                    <h3> Marvo KG-935 </h3>                         
+                          <img src="/Personal-Project/Review/Picture/IMG_6671.jpg"  alt="Pickb1"id="Pickb1">
+                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Marvo KG-935</b> - 
+                             เป็นคียบอร์ดแบบ Mechanical Keyboard ขนาด Full Size เป็นคีย์บอร์ราคาย่อมเยาว์ที่สวยและกระทัดรับเหมาสำหรับไว้พิมงานเล่นเกมส์ซึ่ง
+                             เจ้า marvo ก็เป็นคีย์บอร์ด blues switch แต่ๆทาง marvo กลัวลูกค้าเมื่อยนิ้ว เลยแถม Red Switch มาให้ 5 ตัว เหมาสำหรับการใช้นิ้วที่กด
+                             ค้างบ่อยๆจะได้สบายนิ้ว     <br><br> 
+
+                              <br> <b>จุดเด่น-ด้อย</b> 
+                              <br>- ตัวบอดี้ถ้าทำตกแล้วบุบง่ายมาก
+                              <br>- สีสันสวยงามเมื่อเทียบกับ Razer หรือ ค่ายอื่นๆ
+                              <br>- ราคาค่อนข้างถูกเมื่อเทียบกับงานค่าย Razer,Logitech,Crosair,SteelSerie,etc ซึ่งราคา 2000++ แต่ Marvo ก็มีราคาอยู่ที่ 1,390 บาท ถือว่าถูกและคุ้มมากทีเดียวเลย
+                                  <br><br> 
+
+                                  <br><b> Switch :</b>&nbsp; <b>Red Switch & Blue Switch</b>
+                                  <img src="/Personal-Project/Review/Picture/IMG_6670.jpg"  alt="Pickb1"id="Pickb1">
+                                   <h3>Magicforce 68-Key</h3>                         
+                          <img src="/Personal-Project/Review/Picture/IMG_6664.jpg"  alt="Pickb1"id="Pickb1">
+                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Magicforce 68-Key</b> 
+                            - Magicforce เป็นคีย์บอร์ดที่ไม่มีขายในไทยซึ่งต้องถามว่าทำไมต้องเป็นตัวนี้เพราะ สำหรับคนที่ต้องการคีย์บอร์ดที่เป็น 50%,55%,60% 
+                            เป็นคีย์บอร์ดที่ไม่มี NumPad ซึ่งที่ที่ไทยน้อยค่ายที่จะทำเพราะข้อจำกัดอะไรหลายๆอย่างรวมไปถึงความไม่คุ้มของตัวอุปกรณ์ซึ้งทำให้คีย์บอร์ขนาดเล็ก
+                            มีราคาแพงแต่ได้มาเรื่องการพกพาที่สะดวก ขนย้ายง่านน้ำหนักเบาและสามารถทำเป็น bluetooth ได้แต่ต้องมีหัวแปลง
+                            เหมาสำหรับพกพามากๆ
+                             <br><br> 
+                             <img src="/Personal-Project/Review/Picture/IMG_6667.jpg"  alt="Pickb1"id="Pickb1">
+                             <br> <b>จุดเด่น-ด้อย</b>
+                              <br>- การพกพาที่งายมากเพราะขนาดที่เล็กและถอดสายได้
+                              <br>- ราคาค่อนข้างสูงเพราะส่วนมากจะเป็นคีย์บอร์ดที่ custom โดยจะมีราคา 2000+ แต่ตัวนี้เป็นคีย์บอร์ดแบรดจีนราคาจึงอยู่ที่ 
+                              1,200-2,000 ตามภาษีหรือราคาตลาด
+                                  <br><br> 
+                                  
+                              <br><b> Switch :</b>&nbsp; <b>Red Switch & Blue Switch</b>
+                              <img src="/Personal-Project/Review/Picture/IMG_6669.jpg"  alt="Pickb1"id="Pickb1">
+                                
+                        </div>
+
+                        <div id="Wacom" class="tabcontent">
+                          
+                        <h2>Rewiew Wacom Intuos (CTL-480) </h2>
+                        <p>สวัสดีครับผมวันนี้ผมจะมารีวิว Wacom Intuos (CTL-480)</p>
+                        <img src="/Personal-Project/Review/Picture/IMG_6701.jpg" alt="Wacom"id="Wacom">
+                        
+                        <h3> Wacom Intuos Pen Small(CTL-480/S2-C) </h3> 
+                        <p>แท็บเล็ตแบบปากกา Intuos เม้าส์ปากกาสำหรับวาดรูป ตัวปากกาใช้แรงดันไฟ 
+                          ออกแบบดีไซน์ให้คุณสามารถใช้งานได้อย่างง่ายดายมากยิ่งขึ้น ด้วยขนาดของตัวเครื่องพื้นที่ใช้งานประมาณ 
+                          4x6 นิ้ว หรือ A6 เหมาะสำหรับผู้ใช้งานระดับเริ่มต้นจนถึงระดับกลาง ออกแบบสะดวกสบายโดดเด่นตัวเครื่องเล็กกะทัดรัด 
+                          เพรียวบาง น้ำหนักเบา คล่องตัวและง่ายต่อการใช้งาน 
+                          ตัวปากกาสามารถใช้งานได้ทั้งมือซ้ายและมือขวาตามที่คุณถนัดได้อีกด้วย
+                           </p>
+                           <img src="/Personal-Project/Review/Picture/IMG_6702.jpg" alt="Wacom"id="Wacom">
+                           <h3>ประสิทธิภาพยอดเยี่ยม</h3> <p>
+                              สนุกสนานและเพลิดเพลินในการวาดภาพระบายสี ภายในคอมพิวเตอร์ของคุณได้ง่ายดาย 
+                              ด้วยตัวปากกาและแผ่นวาดออกแบบมาให้ใช้งานได้อย่างเป็นธรรมชาติ
+                           </p>
+                           <img src="/Personal-Project/Review/Picture/IMG_6703.jpg" alt="Wacom"id="Wacom">
+                           <h3>ใส้สำรอง</h3> <p>
+                              สามารถถอดเปลี่ยนใส้ได้ง่ายเนื่องด้วยการใช้ปากกาหน้าสัมผัสปากกาจะค่อยๆยุบลงไปเนื่่องด้วยการใช้งาน
+                              </p>
+                              <img src="/Personal-Project/Review/Picture/IMG_6704.jpg" alt="Wacom"id="Wacom">
+                            <h3>Wireless </h3> <p>
+                                แท็บเล็ตแบบปากกา Intuos รองรับการใช้งานโดยมีช่องเชื่อมต่อผ่าน Port USB 2.0  และ 
+                                สามารถต่อผ่านการ์ด Wireless และมี Battary แต่ต้องซื้อแยก
+                              </p>
+                        </div>
+
+                        <div id="About" class="tabcontent">
+                          <div class="Pc">
+                              <img src="img/PC SET1.jpg"  id="PC">
+     
+                                    <h2>My Working pc set 1</h2>    
+                                    <p>CPU : INTEL CORE I7 4790K<br>M/B : Z97 PRO GAMER<br> VGA : VGA GIGABYTE GTX970 G1 GAMING SLI<br>RAM : 16 GB HYPERX 2400<br> SSD : GALAX GAMER  500 GB<br>PSU : RAIDMAX RX-700AC 700W  </p>
+                                    <h2>Gear</h2>    
+                                    <p>Headset : Razer Electra V2<br>Keyboard : Marvo KG-935<br>Mouse : Logitech G102 <br> Mouse Pad : Coolermater Mousepad RGB<br>Mouse bungee : Neoloution bungee <br>Monitor : Samsung SyncMaster SA300 X2 </p>
+                     
+                                 <img src="img/PC SET 2.jpg"  id="PC">
+                       
+                                    <h2>My Working pc set 2</h2>    
+                                    <p>CPU : INTEL CORE I7 4790<br>M/B : H97-PRO GAMER<br> VGA : ASUS PH GTX1050TI 4G <br>RAM : 32 GB HYPERX 2400<br> SSD : SAMSUNG 860 EVO 256 GB<br>PSU : RAIDMAX RX-700AC 700W  </p>
+                                    <h2>Gear</h2>    
+                                    <p>Headset : Razer Electra V2<br>Keyboard : Razer Blackwidow Chroma<br>Mouse : Razer Lancehead <br> Mouse Pad : Razer firefly <br>Mouse bungee V2 : Razer <br>Monitor : Acer Gaming LED 24.5" KG251Qbiix (75Hz)</p>
+ 
+                            </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="rightcolumn">
+                      <div class="card">
+                        <h1>What is Moaohxz?</h1>
+                        <div><img src="Picture/Mooh.png"alt="mooh"id="mooh"></div><br>
+                        <p>M o a o h x z is <br>M o o h  <  h a m </p>
+                      </div>
+                      <div class="card">
+                        <h1>My Collection</h1>
+                        <a target="_blank" href="Picture/dart.png">
+                        <div class="img"><img src="Picture/dart.png"  alt="dart"id="dart"></div><br>
+                    </a>
+                        <a target="_blank" href="Picture/gallary1.png">
+                        <div class="img"><img src="Picture/gallary1.png"  alt="strom"id="strom"></div><br>
+                    </a>
+                        <div class="fakeimg">Image</div>
+                      </div>
+                      <div class="card">          
+                        <h3>Follow Me</h3>
+                        <img src="Picture/15826125_389171624769107_191717532562099133_n.jpg" alt="Moohx" style="width:100%">
+                            <h1>Sirichai.P</h1>
+                            <p class="title">Student,KMITL</p>
+                            <p> king mongkut's institute of technology ladkrabang</p>
+                        <div class="social">
+                        <div ><div class="social-icons">
+                          <a href="https://github.com/powpunt/Personal-Project" class="social-icon social-icon--github">
+
+                            <div class="tooltip">Github</div>
+                          </a>
+                          <a href="https://www.instagram.com/_moaohx/"  class="social-icon social-icon--instagram">
+
+                            <div class="tooltip">Instagram</div>
+                          </a>
+                          <a href="https://www.facebook.com/profile.php?id=100010288176580&ref=bookmarks&__nodl&_rdr" class="social-icon social-icon--facebook">
+
+                            <div class="tooltip">Facebook</div>
+                          </a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                  
+                <div class="footer">
+                    
                 </div>
-                
-                <!-- Pipes go here! -->
-             </div>
-          </div>
-          <div id="land" class="animated"><div id="debug"></div></div>
-       </div>
-    </div>
-    <div id="footer">
-       <a href="http://www.dotgears.com/">original game/concept/art by dong nguyen</a>
-       <a href="http://nebezb.com/">recreated by nebez briefkani</a>
-    </div>
-    <div class="boundingbox" id="playerbox"></div>
-    <div class="boundingbox" id="pipebox"></div>
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.transit.min.js"></script>
-    <script src="js/buzz.min.js"></script>
-    <script src="js/main.js"></script>
-
-
-    
+                  
 </body>
 </html>
