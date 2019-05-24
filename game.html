@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta content=img/icon/paw.png itemprop="image">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script src="Script/expand.js"></script>
+    
+    
 
 </head>
 <body>
@@ -22,72 +21,61 @@
             <a href="index.html">หมีเรื่องแล้ว</a>
             <a href="About.html">หมีอะไรอ่ะ</a>
             <a href="game.html">หมีมินิเกม</a>
-            <a href="Photo.html">หมีแค่รูป</a>
+            <a href="Photo.html">หมีรูปน่ะ</a>
+
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
              </a>
         </div>
       
       <div style="padding-left:16px">
-        
-    </header>
+         <body>
 
-    <title>Floppy Bird</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Nebez Briefkani" />
-    <meta name="description" content="play floppy bird. a remake of popular game flappy bird using just html/css/js" />
-    <meta name="keywords" content="flappybird,flappy,bird,floppybird,floppy,html,html5,css,css3,js,javascript,jquery,github,nebez,briefkani,nebezb,open,source,opensource" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Floppy Bird" />
-    <meta property="og:description" content="play floppy bird. a remake of popular game flappy bird using just html/css/js" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://nebez.github.io/floppybird/assets/thumb.png" />
-    <meta property="og:url" content="http://nebez.github.io/floppybird/" />
-    <meta property="og:site_name" content="Floppy Bird" />
-    
-
- </head>
- <body>
-    <div id="gamecontainer">
-       <div id="gamescreen">
-          <div id="sky" class="animated">
-             <div id="flyarea">
-                <div id="ceiling" class="animated"></div>
-                <!-- This is the flying and pipe area container -->
-                <div id="player" class="bird animated"></div>
-                
-                <div id="bigscore"></div>
-                
-                <div id="splash"></div>
-                
-                <div id="scoreboard">
-                   <div id="medal"></div>
-                   <div id="currentscore"></div>
-                   <div id="highscore"></div>
-                   <div id="replay"><img src="assets/replay.png" alt="replay"></div>
-                </div>
-                
-                <!-- Pipes go here! -->
-             </div>
-          </div>
-          <div id="land" class="animated"><div id="debug"></div></div>
-       </div>
-    </div>
-    <div id="footer">
-       <a href="http://www.dotgears.com/">original game/concept/art by dong nguyen</a>
-       <a href="http://nebezb.com/">recreated by nebez briefkani</a>
-    </div>
-    <div class="boundingbox" id="playerbox"></div>
-    <div class="boundingbox" id="pipebox"></div>
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.transit.min.js"></script>
-    <script src="js/buzz.min.js"></script>
-    <script src="js/main.js"></script>
-
-
-    
-</body>
+            <heading><h1>&nbsp; &nbsp; &nbsp;X O</h1><div id = "heading-subtext">
+            <span id="reset-game">
+              (New game)</span><span id="reset-session">(New session)</span>
+            </div><div id = "reset-session"></div></heading>
+          <section id = "game">
+            
+          <svg  id ="win-lines" class="invisible" height="210" width="500">
+            <line id = "southeast" class = "invisible" x1="15" y1="15" x2="300" y2="300"/>
+            <line id = "northeast" class = "invisible" x1="15" y1="300" x2="300" y2="15"/>
+            <line id = "left" class = "invisible" x1="50" y1="15" x2="50" y2="300"/>
+            <line id = "middleV" class = "invisible" x1="160" y1="15" x2="160" y2="300"/>
+            <line id = "right" class = "invisible" x1="270" y1="15" x2="270" y2="300"/>
+            <line id = "top" class = "invisible" x1="15" y1="60" x2="300" y2="60"/>
+            <line id = "middleH" class = "invisible" x1="15" y1="160" x2="300" y2="160" />
+            <line id = "bottom" class = "invisible" x1="15" y1="260" x2="300" y2="260"/>
+          </svg>
+            <table id = "game-board">
+              <tr><td id = "top-left"></td><td id = "top-middle"></td><td id = "top-right"></td></tr>
+              <tr><td id = "middle-left"></td><td id = "middle-middle"></td><td id = "middle-right"></td></tr>
+              <tr><td id = "bottom-left"></td><td id = "bottom-middle"></td><td id = "bottom-right"></td></tr>
+            </table>
+          </section>
+          <section id = "choose">
+            <table id = "player-token-assignment">
+              <tr><td id="me-wins" class="wins"></td><td>Me</td><td id="me-token">X</td></tr>
+              <tr><td id="computer-wins" class="wins"></td><td>Computer</td><td id="computer-token">O</td></tr>
+            </table>
+            <div id = "popup" class="invisible">
+              Swap Tokens
+            </div>
+          </section>
+          <section id = "difficulty">
+              <table id = "game-difficulty">
+                <tr><td>Child</td><td id="child-mode">[ ]</td><td>Easy</td><td id="easy-mode">[X]</td><td>Hard</td><td id="hard-mode">[ ]</td></tr>
+              <div id = "popup-difficulty" class="invisible">
+              Set difficulty
+              </div>
+            </table>
+            
+            
+          
+              <script  src="Script/Game.js"></script>
+          
+          
+          
+          
+          </body>
 </html>

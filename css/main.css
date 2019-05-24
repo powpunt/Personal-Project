@@ -1,390 +1,310 @@
-/*
-   Copyright 2014 Nebez Briefkani
-   floppybird - main.css
-   
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-*/
-
-@-webkit-keyframes animLand {
-   0% { background-position: 0px 0px; }
-   100% { background-position: -335px 0px; }
-}
-@-moz-keyframes animLand {
-   0% { background-position: 0px 0px; }
-   100% { background-position: -335px 0px; }
-}
-@-o-keyframes animLand {
-   0% { background-position: 0px 0px; }
-   100% { background-position: -335px 0px; }
-}
-@keyframes animLand {
-   0% { background-position: 0px 0px; }
-   100% { background-position: -335px 0px; }
-}
-
-@-webkit-keyframes animSky {
-   0% { background-position: 0px 100%; }
-   100% { background-position: -275px 100%; }
-}
-@-moz-keyframes animSky {
-   0% { background-position: 0px 100%; }
-   100% { background-position: -275px 100%; }
-}
-@-o-keyframes animSky {
-   0% { background-position: 0px 100%; }
-   100% { background-position: -275px 100%; }
-}
-@keyframes animSky {
-   0% { background-position: 0px 100%; }
-   100% { background-position: -275px 100%; }
-}
-
-@-webkit-keyframes animBird {
-   from { background-position: 0px 0px; }
-   to { background-position: 0px -96px; }
-}
-@-moz-keyframes animBird {
-   from { background-position: 0px 0px; }
-   to { background-position: 0px -96px; }
-}
-@-o-keyframes animBird {
-   from { background-position: 0px 0px; }
-   to { background-position: 0px -96px; }
-}
-@keyframes animBird {
-   from { background-position: 0px 0px; }
-   to { background-position: 0px -96px; }
-}
-
-@-webkit-keyframes animPipe {
-   0% { left: 1500px; }
-   100% { left: -100px; }
-}
-@-moz-keyframes animPipe {
-   0% { left: 1500px; }
-   100% { left: -100px; }
-}
-@-o-keyframes animPipe {
-   0% { left: 1500px; }
-   100% { left: -100px; }
-}
-@keyframes animPipe {
-   0% { left: 1500px; }
-   100% { left: -100px; }
-}
-
-@-webkit-keyframes animCeiling {
-   0% { background-position: 0px 0px; }
-   100% { background-position: -63px 0px; }
-}
-@-moz-keyframes animCeiling {
-   0% { background-position: 0px 0px; }
-   100% { background-position: -63px 0px; }
-}
-@-o-keyframes animCeiling {
-   0% { background-position: 0px 0px; }
-   100% { background-position: -63px 0px; }
-}
-@keyframes animCeiling {
-   0% { background-position: 0px 0px; }
-   100% { background-position: -63px 0px; }
-}
-
-
-*,
-*:before,
-*:after
-{
-   /* border box */
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-   /* select disable */
-   -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-}
-
-html,
-body
-{
-   height: 100%;
-   overflow: hidden;
-   font-family: monospace;
-   font-size: 12px;
-   color: #fff;
+body {
    font-family: 'Kanit', sans-serif;
-}
+  font-size: 1.5em;
+  background-color: azure;
+  min-width:500px;
 
-#gamecontainer
-{
-   position: relative;
-   width: 100%;
-   height: 100%;
-   min-height: 525px;
-}
-
-/*
-Screen - Game
-*/
-#gamescreen
-{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-}
-
-#sky
-{
-   position: absolute;
-   top: 0;
-   width: 100%;
-   height: 80%;
-   background-image: url('../assets/sky.png');
-   background-repeat: repeat-x;
-   background-position: 0px 100%;
-   background-color: #4ec0ca;
+ }
+ #myBtn {
+     display: none; 
+     position: fixed; 
+     bottom: 20px; 
+     right: 30px; 
+     z-index: 99; 
+     border: none; 
+     outline: none; 
+     background-color: rgb(88, 88, 88); 
+     color: rgb(0, 0, 0); 
+     cursor: pointer; 
+     padding: 15px; 
+     border-radius: 10px; 
+     font-size: 18px; 
+   }
    
-   -webkit-animation: animSky 7s linear infinite;
-   animation: animSky 7s linear infinite;
-}
-
-#flyarea
-{
-   position: absolute;
-   bottom: 0;
-   height: 420px;
-   width: 100%;
-}
-
-#ceiling
-{
-   position: absolute;
-   top: -16px;
-   height: 16px;
-   width: 100%;
-   background-image: url('../assets/ceiling.png');
-   background-repeat: repeat-x;
+   #myBtn:hover {
+     background-color: rgb(255, 255, 255); 
+   }
+   /*/*/
+ 
    
-   -webkit-animation: animCeiling 481ms linear infinite;
-   animation: animCeiling 481ms linear infinite;
-}
-
-#land
-{
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   height: 20%;
-   background-image: url('../assets/land.png');
-   background-repeat: repeat-x;
-   background-position: 0px 0px;
-   background-color: #ded895;
-   
-   -webkit-animation: animLand 2516ms linear infinite;
-   animation: animLand 2516ms linear infinite;
-}
-
-#bigscore
-{
-   position: absolute;
-   top: 0px;
-   left: 150px;
-   z-index: 100;
-}
-
-#bigscore img
-{
-   display: inline-block;
-   padding: 1px;
-}
-
-#splash
-{
-   position: absolute;
-   opacity: 0;
-   top: 75px;
-   left: 65px;
-   width: 188px;
-   height: 170px;
-   background-image: url('../assets/splash.png');
-   background-repeat: no-repeat;
-}
-
-#scoreboard
-{
-   position: absolute;
-   display: none;
-   opacity: 0;
-   top: 64px;
-   left: 150px;
-   width: 236px;
-   height: 280px;
-   background-image: url('../assets/scoreboard.png');
-   background-repeat: no-repeat;
-   
-   z-index: 1000;
-}
-
-#medal
-{
-   position: absolute;
-   opacity: 0;
-   top: 114px;
-   left: 32px;
-   width: 44px;
-   height: 44px;
-}
-
-#currentscore
-{
-   position: absolute;
-   top: 105px;
-   left: 107px;
-   width: 104px;
-   height: 14px;
-   text-align: right;
-}
-
-#currentscore img
-{
-   padding-left: 2px;
-}
-
-#highscore
-{
-   position: absolute;
-   top: 147px;
-   left: 107px;
-   width: 104px;
-   height: 14px;
-   text-align: right;
-}
-
-#highscore img
-{
-   padding-left: 2px;
-}
-
-#replay
-{
-   position: absolute;
-   opacity: 0;
-   top: 205px;
-   left: 61px;
-   height: 115px;
-   width: 70px;
-   cursor: pointer;
-}
-
-.boundingbox
-{
-   position: absolute;
-   display: none;
-   top: 0;
-   left: 0;
-   width: 0;
-   height: 0;
-   border: 1px solid red;
-}
-
-#player
-{
-   left: 60px;
-   top: 200px;
-}
-
-.bird
-{
-   position: absolute;
-   width: 34px;
-   height: 24px;
-   background-image: url('../assets/bird.png');
-   
-   -webkit-animation: animBird 300ms steps(4) infinite;
-   animation: animBird 300ms steps(4) infinite;
-}
-
-.pipe
-{
-   position: absolute;
-   left: -100px;
-   width: 52px;
-   height: 100%;
-   z-index: 10;
-   
-   -webkit-animation: animPipe 7500ms linear;
-   animation: animPipe 7500ms linear;
-}
-
-.pipe_upper
-{
-   position: absolute;
-   top: 0;
-   width: 52px;
-   background-image: url('../assets/pipe.png');
-   background-repeat: repeat-y;
-   background-position: center;
-}
-
-.pipe_upper:after
-{
-   content: "";
-   position: absolute;
-   bottom: 0;
-   width: 52px;
-   height: 26px;
-   background-image: url('../assets/pipe-down.png');
-}
-
-.pipe_lower
-{
-   position: absolute;
-   bottom: 0;
-   width: 52px;
-   background-image: url('../assets/pipe.png');
-   background-repeat: repeat-y;
-   background-position: center;
-}
-
-.pipe_lower:after
-{
-   content: "";
-   position: absolute;
-   top: 0;
-   width: 52px;
-   height: 26px;
-   background-image: url('../assets/pipe-up.png');
-}
-
-#footer
-{
-   position: absolute;
-   bottom: 3px;
-   left: 3px;
-}
-
-#footer a,
-#footer a:link,
-#footer a:visited,
-#footer a:hover,
-#footer a:active
-{
+ .menu {
+   overflow: hidden;
+   background-color: #333;
+ }
+ 
+ .menu a {
+   float: left;
    display: block;
-   padding: 2px;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
    text-decoration: none;
-   color: #fff;
+   font-size: 21px;
+ }
+ 
+ .menu a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ 
+ .active {
+   background-color: rgb(65, 65, 65);
+   color: white;
+ }
+ 
+ .menu .icon {
+   display: none;
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .menu a:not(:first-child) {display: none;}
+   .menu a.icon {
+     float: right;
+     display: block;
+   }
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .menu.responsive {position: relative;}
+   .menu.responsive .icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+   }
+   .menu.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+ }
+ * {
+   box-sizing: border-box;
+ }
+ 
+ /* Position text in the middle of the page/image */
+ .bg-text {
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+   color: white;
+   font-weight: bold;
+   border: 3px solid #f1f1f1;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+   width: 80%;
+   padding: 20px;
+   text-align: center;
+ }
+ /*Game*/
+ 
+ 
+
+ heading {
+   font-size: 3em;
+   border-bottom: 5px double black;
+   display:block;
+ }
+ 
+ heading h1 {
+   font-size:1em;
+   padding: 0;
+   margin:0;
+   margin-left: 520px;
+   color: #333;
+ }
+ 
+ /* styling for game board section */
+ section#game {
+   width:320px;
+   height:320px;
+   margin-left:23px;
+   margin-top: 23px;
+   position:relative;
+ }
+ 
+ /*define the gameboard and win-lines as part of a container. allow to have objects overtop */
+ section#game #game-board, section#game #win-lines {
+   width:100%;
+   height:100%;
+   position:absolute;
+   margin-top: 0px;
+   margin-left: 550px;
+ }
+ 
+ /*put the win-lines on top */
+ #win-lines {
+   z-index:10;
+ }
+ 
+ /*description of win line */
+ #win-lines line {
+   stroke:rgb(255, 0, 0);stroke-width:8
+   
+ }
+ 
+ /* styling for game board table */
+ section#game tr {
+   height:100px;
+ }
+ 
+ section#game td {
+   width:100px;
+   font-size: 2.5em;
+   text-align:center;
+   box-shadow: 1px 1px 10px  rgb(0, 153, 255);
+ }
+ 
+ .inner-shadow {
+   box-shadow: inset -1px -1px 10px  rgb(0, 153, 255) !important;
+ }
+ 
+ section#game td#middle-middle {
+   border: 5px double  rgb(0, 153, 255);
+   box-shadow: 1px 1px 10px  rgb(0, 153, 255);
+ }
+ 
+ section#game td#top-middle,
+ section#game td#bottom-middle{
+   border-left: 5px double  rgb(0, 153, 255);
+   border-right: 5px double  rgb(0, 153, 255);
+   box-shadow: 1px 1px 10px rgb(0, 153, 255);
+ }
+ 
+ section#game td#middle-right,
+ section#game td#middle-left {
+   border-top: 5px double  rgb(0, 153, 255);
+   border-bottom: 5px double  rgb(0, 153, 255);
+   box-shadow: 1px 1px 10px  rgb(0, 153, 255);
+ }
+ 
+ /* styling for section defining who is x and who o */
+ section#choose {
+   margin-top: 20px;
+   margin-left: 650px;
+   font-size:0.9em;
+ }
+ 
+ /*styling for the table defining who is who */
+ section#choose table, section#choose tr, section#choose td {
+   border: 1px solid rgb(0, 140, 255);
+   min-width:20px;
+ }
+ 
+ /*inner padding of table defining who is who */
+ section#choose td {
+   padding: 3px;
+   cursor: pointer;
+   
+ }
+ 
+ /*help text dialogue regarding who is who */
+ section#choose #popup {
+   position: absolute;
+   font-style:italic;
+   background-color:lightgray;
+   border: 1px solid black;
+   padding: 4px;
+   font-size: 0.8em;
+   margin-top: -50px;
+   margin-left: 200px;
+ }
+ 
+ /*the part reading easy [] hard[] */
+ #game-difficulty {
+   margin-top:30px;
+   margin-left: 550px;
+ }
+ 
+ #child-mode, #easy-mode, #hard-mode {
+   font-family: monospace;
+   font-weight:bold;
+   cursor: pointer;
+ }
+ 
+ /*help text dialogue on setting difficulty*/
+ #popup-difficulty {
+   position: absolute;
+   font-style:italic;
+   background-color:rgb(255, 255, 255);
+   border: 1px solid black;
+   padding: 4px;
+   font-size: 0.8em;
+   margin-left: 840px;
+ }
+ 
+ #heading-subtext {
+   font-size: 0.3em;
+   color: rgb(0, 0, 0);
+   margin-left:590px;
+   margin-bottom: 2px;
+   cursor: pointer;
+ }
+ 
+ #reset-game:hover {
+   text-decoration: underline;
+ }
+ 
+ /*class to set the number of wins*/
+ .wins {
+   width:20px;
+ }
+ 
+ /*reusable class to make something invisible */
+ .invisible {
+   display: none;
+ }
+
+ @media screen and (max-width: 1000px) {
+   
+#heading-subtext {
+  font-size: 0.3em;
+  color: slategray;
+  margin-left:70px;
+  margin-bottom: 2px;
+  cursor: pointer;
 }
+#game-difficulty {
+   margin-top:30px;
+   margin-left: 70px;
+ }
+ section#choose #popup {
+  position: absolute;
+  font-style:italic;
+  background-color:lightgray;
+  border: 1px solid black;
+  padding: 4px;
+  font-size: 0.8em;
+  margin-top: -50px;
+  margin-left: 190px;
+}
+section#choose {
+   margin-top: 20px;
+   margin-left: 100px;
+   font-size:0.9em;
+ }
+ /*define the gameboard and win-lines as part of a container. allow to have objects overtop */
+section#game #game-board, section#game #win-lines {
+   width:100%;
+   height:100%;
+   position:absolute;
+   margin-top: 0px;
+    margin-left: 0px;
+ }
+ 
+section#game {
+  width:320px;
+  height:320px;
+  margin-left:23px;
+  margin-top: 23px;
+  position:relative;
+}
+heading h1 {
+   font-size:1em;
+   padding: 0;
+   margin:0;
+   margin-left: 20px;
+
+ }
+ }

@@ -30,7 +30,7 @@ body {
   }
   
   .header {
-    background-image: url("/Personal-Project/Picture/MoohReview.png");
+    background-image: url("/Picture/MoohReview.png");
     background-repeat: no-repeat;
     height: 300px; 
     width: 1500px auto;
@@ -123,18 +123,7 @@ body {
 
     
   }
-  #dart{
-    max-width: 100%;
-  height: auto;
-    border-radius: 10px;
-    filter: blur(0.8px);
-  }  
-  #strom{
-    max-width: 100%;
-  height: auto;
-    border-radius: 10px;
-    filter: blur(0.8px);
-  }
+ 
   #ig {
     max-width: 100%;
     height: auto;
@@ -239,4 +228,10 @@ h3{
   font: bold;
   font-size: 24px;
 }
+#paw{
+  padding-left: 60px;
+  max-width: 80%;
+  height: auto;
 
+}
+/*clock*/
